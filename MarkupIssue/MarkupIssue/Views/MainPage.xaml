@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ContentPage 
+    xmlns="http://xamarin.com/schemas/2014/forms" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+    x:Class="MarkupIssue.Views.MainPage" 
+    xmlns:design="clr-namespace:Design.Extensions;assembly:Design"
+    Title="{Binding Title}">
+    <StackLayout HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
+        <Label Text="Welcome to Xamarin Forms and Prism!" />
+        <StackLayout>
+            <BoxView>
+                <BoxView.Color>
+                    <design:HslColorExtension H="0" S="1" L="0.5" A="1" />
+                </BoxView.Color>
+            </BoxView>
+        </StackLayout>
+    </StackLayout>
+</ContentPage>
